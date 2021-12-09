@@ -1,0 +1,109 @@
+body {
+  margin: 0px;
+  display: grid;
+  justify-items: center;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  padding: 40px;
+  font-size: 80px;
+  position: relative;
+}
+h1::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(red, white);
+  position: absolute;
+  z-index: -1;
+  margin-left: -555px;
+  margin-top: 21px;
+  border-radius: 5px;
+}
+.nav a {
+  color: white;
+  background: black;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-left: 60px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.nav a:hover {
+  background: rgb(71, 71, 71);
+  color: black;
+}
+.conteudo img {
+  max-width: 100%;
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin-top: 90px;
+}
+.info {
+  margin: 20px;
+  padding: 15px 10px;
+}
+.info:hover {
+  background: rgb(219, 219, 219);
+  border: 0px 10px;
+  border-left: 5px solid #e21;
+}
+.info a {
+  color: white;
+  background: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.info a:hover {
+  background: rgb(71, 71, 71);
+  color: black;
+}
+.audi {
+  width: 100%;
+  height: 400px;
+  background-image: url(img/2020-audi-a4-facelift-sketch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+.img-audi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top: 30px;
+}
+.mini {
+  max-width: 100%;
+  height: 100%;
+  max-resolution: 0px 20px;
+}
+.footer {
+  width: 100%;
+  color: white;
+  background: black;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 30px;
+}
+@media (max-width: 1000px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 10px;
+  }
+  .linha3 {
+    grid-row: 3;
+  }
+  .img-audi {
+    padding: 20px;
+    gap: 10px;
+  }
+}
